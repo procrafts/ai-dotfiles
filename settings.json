@@ -1,0 +1,69 @@
+{
+  "model": "opus[1m]",
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/statusline-command.sh"
+  },
+  "effortLevel": "high",
+  "theme": "auto",
+  "switchModelsOnFlag": false,
+  "autoMemoryEnabled": false,
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "permissions": {
+    "defaultMode": "auto",
+    "allow": [
+      "WebSearch",
+      "Bash(grep *)",
+      "Bash(awk *)",
+      "Bash(git log *)",
+      "Bash(git rev-list *)",
+      "Bash(git check-ignore *)",
+      "Bash(java -version)",
+      "Bash(brew list *)",
+      "WebFetch(domain:docs.claude.com)",
+      "WebFetch(domain:claude.com)",
+      "WebFetch(domain:support.claude.com)",
+      "WebFetch(domain:privacy.claude.com)",
+      "WebFetch(domain:www.anthropic.com)",
+      "WebFetch(domain:privacy.anthropic.com)",
+      "WebFetch(domain:trust.anthropic.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:gist.github.com)"
+    ],
+    "deny": [
+      "Artifact",
+      "Workflow",
+      "AskUserQuestion",
+      "Bash(git filter-branch *)",
+      "Bash(git filter-repo *)",
+      "Bash(git reflog expire *)",
+      "Bash(git gc *)",
+      "Bash(git update-ref -d *)"
+    ],
+    "ask": [
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git pull *)",
+      "Bash(git branch -D *)",
+      "Bash(git rebase *)"
+    ]
+  },
+  "skillOverrides": {
+    "claude-api": "user-invocable-only",
+    "artifact-design": "user-invocable-only",
+    "deep-research": "user-invocable-only",
+    "dataviz": "user-invocable-only",
+    "keybindings-help": "user-invocable-only",
+    "verify": "user-invocable-only",
+    "code-review": "user-invocable-only",
+    "simplify": "user-invocable-only",
+    "run": "user-invocable-only",
+    "init": "user-invocable-only",
+    "review": "user-invocable-only",
+    "security-review": "user-invocable-only"
+  }
+}
