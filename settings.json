@@ -1,19 +1,9 @@
 {
-  "model": "opus[1m]",
-  "statusLine": {
-    "type": "command",
-    "command": "bash ~/.claude/statusline-command.sh"
-  },
-  "effortLevel": "high",
-  "theme": "auto",
-  "switchModelsOnFlag": false,
-  "autoMemoryEnabled": false,
   "attribution": {
     "commit": "",
     "pr": ""
   },
   "permissions": {
-    "defaultMode": "auto",
     "allow": [
       "WebSearch",
       "Bash(grep *)",
@@ -50,8 +40,10 @@
       "Bash(git pull *)",
       "Bash(git branch -D *)",
       "Bash(git rebase *)"
-    ]
+    ],
+    "defaultMode": "auto"
   },
+  "model": "opus[1m]",
   "skillOverrides": {
     "claude-api": "user-invocable-only",
     "artifact-design": "user-invocable-only",
@@ -65,5 +57,13 @@
     "init": "user-invocable-only",
     "review": "user-invocable-only",
     "security-review": "user-invocable-only"
-  }
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/statusline-command.sh"
+  },
+  "effortLevel": "high",
+  "autoMemoryEnabled": false,
+  "theme": "auto",
+  "switchModelsOnFlag": false
 }
