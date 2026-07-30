@@ -19,7 +19,7 @@ Reusable checklist for auditing any instruction file under `.claude/` or `~/.cla
 ## Process
 
 1. List every atomic, independently-checkable claim in the target file/section.
-2. Batch related claims by domain (e.g. stack/build, architecture, API/auth, git conventions, i18n) and verify each batch with a dedicated search (agent, or direct grep/read) - ask for evidence per claim, not a yes/no. Note that plain `grep` skips a git-ignored `./.claude/local/`, so search with a tool that includes ignored files (e.g. `rg --no-ignore`) - a missed hit there turns into a wrong conclusion (calling content unique, or a rule unenforced, when it isn't).
+2. Batch related claims by domain (e.g. stack/build, architecture, API/auth, git conventions, i18n) and verify each batch with a dedicated search (agent, or direct grep/read) - ask for evidence per claim, not a yes/no. Note that searching `./.claude/` needs `rg --hidden --no-ignore` - it is hidden and often git-ignored, so a plain search finds nothing there and you wrongly conclude content is unique or a rule unenforced.
 3. Judge each claim/rule against the six checks above.
 4. Report findings with a recommendation. Don't edit the target file yourself - wait for a decision.
 5. Once content is settled, run the proofreading pass below - separate from steps 1-4, since these are copy-editing issues, not correctness issues, and get missed by content-focused review.
