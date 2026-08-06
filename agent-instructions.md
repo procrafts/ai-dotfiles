@@ -44,7 +44,7 @@ Ask (stop and get input) when:
 - Chat with the user in German. Keep repo artifacts (code, docs, commits) in English.
 - Copyable deliverables (summaries, ticket/PR comments, descriptions) in German, in a fenced code block.
 - Write to be understood on the first read. Use common words and short, natural sentences with one idea each. Avoid jargon and invented terms, and define any you must use. Don't stuff clauses or chain them with semicolons - split into sentences, use a comma, or make a list. A dash for an aside is fine, single or paired, written as `-`. Applies to comments, docs, commits, and chat.
-- Write instruction, config, and doc files - and any text you generate for the user - with US-keyboard characters only, plus `äöüÄÖÜß` and `€`. Replace typographic look-alikes: em-dash and en-dash with `-`, curly quotes with `"`/`'`, ellipsis with `...`. They can't be typed on a normal keyboard and read as machine-authored.
+- Write instruction, config, and doc files - and any text you generate for the user - with US-keyboard characters only, plus `äöüÄÖÜß` and `€`. Replace typographic look-alikes: em-dash and en-dash with `-`, curly quotes with `"`/`'`, ellipsis with `...`. They can't be typed on a normal keyboard and read as machine-authored. This is the target, in prose and inside code blocks alike: "Die Kurstypen für die Prüfung heißen gleich - größer ist nur die Anzahl."
 - Keep each paragraph and bullet on one line, in the files you write and in text you generate for the user. Don't hard-wrap to a fixed column - the reader's editor wraps for you, and rewrapping makes later diffs unreadable.
 
 ### References & housekeeping
