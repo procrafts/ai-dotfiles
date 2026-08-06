@@ -62,7 +62,7 @@
     "type": "command",
     "command": "bash ~/.claude/statusline-command.sh"
   },
-  "effortLevel": "high",
+  "effortLevel": "medium",
   "autoMemoryEnabled": false,
   "theme": "auto",
   "switchModelsOnFlag": false
