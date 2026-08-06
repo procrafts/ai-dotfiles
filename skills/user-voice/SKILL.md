@@ -16,6 +16,7 @@ Write German that reads as if the user hand-wrote it - their **voice**, not a ma
 - Full, natural sentences, and they may be short. When a choice is not obvious, briefly say why (say, weighing two options) - it reads as considered.
 - Flag genuine uncertainty plainly rather than overclaiming.
 - Plain words - avoid jargon the reader would not know.
+- Denglisch for technical terms: "der Body", "das Token", "reviewt", "committet", "deployt".
 - A little more polite than in chat, since other people read it.
 
 ## Format
